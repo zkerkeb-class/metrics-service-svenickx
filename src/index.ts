@@ -38,5 +38,5 @@ app.get("/", (req: Request, res: Response) => {
 
 const port = process.env.METRICS_SERVICE_PORT || 2000;
 app.listen(port, () => {
-  console.log(`[server]: Server is running at http://localhost:${port}`);
+  console.log(`[server]: Metrics is running at http://localhost:${port}`);
 });

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules, allowing default imports from modules with no default export.    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmit": true,
+    "outDir": "./dist",
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "incremental": true, // Enables incremental compilation, build only the changed code
+    "noUnusedParameters": false, // Do not allow unused parameters in functions.    "useUnknownInCatchVariables": true,
+    "noUnusedLocals": true, // Similar to noUnusedParameters, but for local variables.
+    "noUncheckedIndexedAccess": true, // it ensures that indexed access types are checked for undefined values,
+    "resolveJsonModule": true, // Allows importing JSON files as modules
+    "forceConsistentCasingInFileNames": true, // Ensures that file names are treated with consistent casing, which is important for cross-platform compatibility.,
+    "noPropertyAccessFromIndexSignature": false, // This setting enforces that properties accessed via dot notation must be explicitly defined in the type.
+    "allowUnreachableCode": false, // When set to false, this option raises errors for code that is unreachable, meaning it cannot be executed.
+    "noFallthroughCasesInSwitch": true, // This option reports errors for switch statement cases that fall through without a break, return, or throw statement.
+    "noErrorTruncation": true // When enabled, this option prevents TypeScript from truncating error messages, providing full details about the error.    "noUncheckedIndexedAccess": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
